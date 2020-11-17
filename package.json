@@ -1,0 +1,18 @@
+{
+  "name": "observabledemo",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "parcel index.html -p 8000",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  }
+}
