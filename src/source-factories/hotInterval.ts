@@ -12,7 +12,7 @@ export function hotInterval$(ms = 1000): Observable<number> {
 
   // Create a number producer. This producer starts emitting values independently of someone listening to it.
   // Similar to events in the browser being fired independently of a listener.
-  producer = interval(ms).subscribe((v) => !!onChange && onChange(v));
+  producer = interval(ms).subscribe((v: number) => !!onChange && onChange(v));
 
   return new Observable((observer) => {
     console.log("hot source subscribed");

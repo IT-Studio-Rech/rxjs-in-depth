@@ -2,6 +2,7 @@
   "name": "observabledemo",
   "version": "1.0.0",
   "main": "index.ts",
+  "author": { "name": "Jonas Rech", "email": "info@jonasrech.io" },
   "scripts": {
     "start": "parcel index.html -p 8000",
     "build": "parcel build index.html"

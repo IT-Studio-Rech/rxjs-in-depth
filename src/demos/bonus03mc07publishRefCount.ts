@@ -8,7 +8,7 @@ import { logComplete } from "../operators/logComplete";
 // Multicasting via publish operator with refcount
 export async function mc7publishRefCountDemo() {
   // Create cold observable. Counting starts on subscription.
-  const source$ = interval(800).pipe(take(50), logComplete());
+  const source$ = interval(800).pipe(take(14), logComplete());
 
   // Multicasted source. Subscribes on source only when subscribers are present.
   const published$ = source$.pipe(

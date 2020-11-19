@@ -12,6 +12,7 @@ export async function mc11shareReplayDemo() {
 
   // Share replay is similar to multiplex with replay subject & refcounting.
   // If an observer subscribes after source completes, last N values are returned and observer is completed.
+  // !!! NOT LIKE SHARE, no reconnect if source completes !!!
   const published$ = source$.pipe(shareReplay(2));
   console.log("Source shared.");
 

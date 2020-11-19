@@ -19,14 +19,13 @@ export async function operatorsDemo() {
 
   // Simple value logging examples
   source$.pipe(simpleLog).subscribe();
-  // source$.pipe(betterLog()).subscribe();
-  // source$.pipe(betterLog("a")).subscribe();
+  // source$.pipe(betterLog('a')).subscribe();
   // source$.pipe(evenShorterLog("a")).subscribe();
   // source$.pipe(doubleLog("a")).subscribe();
   // source$.pipe(namedLog("a")).subscribe();
 
   // Modulo filter example
-  // source$.pipe(filterModulo(3)).subscribe(namedObserver("a"));
+  source$.pipe(filterModulo(3)).subscribe(namedObserver("a"));
 
   // await wait(3000);
 }

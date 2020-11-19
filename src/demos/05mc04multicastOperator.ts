@@ -17,7 +17,7 @@ export async function mc4multicastOperatorDemo() {
   );
 
   // Memory leak alert. If source does not complete, the multicast subject keeps listening forever.
-  // Creates a connectrable observable. It starts subscribing on source on .connect().
+  // Creates a connectable observable. It starts subscribing on source on .connect().
   const multicasted$ = source$.pipe(
     // Multicast with Subject for multicasting.
     multicast(new Subject()),
